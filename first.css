@@ -1,0 +1,31 @@
+h1{
+    text-align:center
+}
+#block{
+    width:95%;
+    height:300px;
+    background-color:cyan;
+    margin:3%
+}
+.card{
+    height:400px;
+    background-color:rgb(9 98 204);
+    width:20%;
+    float:left;
+    margin:6%;
+    overflow:scroll
+}
+.violet{
+    background-color:rgb(150, 99, 152);
+}
+#skyblue{
+    background-color:rgb(113, 231, 225);
+}
+.card > img{
+    height:150px;
+    width:100%
+}
+#mainbox{
+    margin-left:3%;
+    display:inline-block
+}
