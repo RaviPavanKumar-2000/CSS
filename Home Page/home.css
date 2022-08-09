@@ -1,16 +1,241 @@
+body{
+    margin:auto
+}
+a{
+    text-decoration:none;
+}
 header{
     height:80px;
-    border:5px solid burlywood
+    /*border:5px solid burlywood;*/
+    background-color: darkslategrey;
 }
+#brandname{
+    color:white;
+    font-size: 40px;
+    float:left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#social{
+    float:right;
+    margin-top: 1%;
+    margin-right: 1%
+}
+.socialImg{
+    height:50px;
+    border-radius: 25px;
+}
+/* Search Block CSS*/
 #Search{
     height:400px;
-    border:5px dotted rgb(44, 152, 214)
+    /* border:5px dotted rgb(44, 152, 214); */
+    background-image: url('Images/foodwall.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 400px;
 }
+#logo{
+    height: 150px;
+    width: 150px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-left: 46%;
+    margin-top:2%;
+    position:absolute;
+    animation: revolve 20s infinite;
+}
+@keyframes revolve{
+    0% {
+        transform: rotate(30deg);
+        margin-left: 2%;
+    }
+    25% {
+        transform: rotate(90deg);
+        margin-left: 20%;
+    }
+    50% {
+        transform: rotate(180deg);
+        margin-left: 40%;
+    }
+    75% {
+        transform: rotate(270deg);
+        margin-left: 80%;
+    }
+    100% {
+        transform: rotate(360deg);
+        margin-left: 40%;
+    }
+}
+#logo>span{
+    margin-left:9%;
+    margin-top: 26%;
+    position:absolute;
+    font-size:60px
+}
+#heading{
+    font-size: 60px;
+    color: white;
+    margin-left:28%;
+    margin-top: 13%;
+    position:absolute
+}
+#dropdown{
+    margin-left:29%;
+    margin-top:20%;
+    position:absolute;
+    /* border: 2px solid white; */
+    height: 60px;
+    width: 45%;
+}
+select{
+    height: 60px;
+    width: 45%;
+    text-align: center;
+    font-size: 20px;
+}
+#restselect{
+    width: 54%
+}
+
+
+
+
+/* Quick search Block CSS*/
 #quicksearch{
-    height:600px;
-    border:8px groove lightslategray
+    /* height:600px; */
+    /* border:8px groove lightslategray; */
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom:2%;
+    display: inline-block;
 }
+#quickheading{
+    display: block;
+    color: darkslategrey;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#quickheading:hover{
+    font-size: 40px;
+}
+#quicksubheading{
+    color: gray;
+    font-size:20px;
+    margin-left: 2%;
+    line-height: 3;
+}
+.tilecontainer{
+    height: 180px;
+    width: 30%;
+    /* border: 2px solid black; */
+    box-shadow: 10px 15px 10px #3b2632;
+    float:left;
+    margin-left: 2%;
+    margin-top: 3%;
+    animation: dance 10s;
+}
+@keyframes dance{
+    0% {transform: rotate(-5deg)}
+    25% {transform: rotate(0deg)}
+    50% {transform: scale(1.1)}
+    75% {transform: rotate(0deg)}
+    100% {transform: rotate(-5deg)}
+}
+
+
+.tilecontainer:hover{
+    transform: scale(1.1);
+    /* transform: skewX(10deg);
+    transform: skewY(10deg);
+    transform: rotate(60deg);
+    transform: translate(100px,100px); */
+}
+.tilecomponent1{
+    width:52%;
+    float: left;
+}
+.tilecomponent1 img{
+    height: 180px;
+    width: 100%;
+}
+.tilecomponent2{
+    width:45%;
+    float: left;
+    margin-top: 15%;
+    margin-left: 2%;
+}
+.componentheading{
+    color: violet;
+    font-size: 25px;
+}
+.componentheading > a {
+    color: #5d41e4 !important;
+}
+.componentsubheading{
+    color: gray;
+    font-size: 20px;
+}
+/* Footer Block CSS*/
 footer{
-    height:80px;
-    border:5px double rgb(133, 43, 72)
+    height:140px;
+    /* border:5px double rgb(133, 43, 72); */
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.fotdiv{
+    width: 31%;
+    float: left;
+    border-right: 2px solid white;
+}
+#noborder{
+    border: none;
+    width: 31%;
+    float: left;
+}
+
+@media screen and (max-width:1400px){
+    body{
+        background-color: skyblue;
+    }
+}
+
+@media screen and (max-width:1300px){
+    body{
+        background-color: rgb(168, 79, 188);
+    }
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: rgb(91, 189, 151);
+    }
+    .tilecontainer{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:1100px){
+    body{
+        background-color: rgb(219, 230, 67);
+    }
+}
+@media screen and (max-width:900px){
+    body{
+        background-color: rgb(143, 48, 73);
+    }
+    .tilecontainer{
+        width: 100%;
+    }
+}
+@media screen and (max-width:750px){
+    body{
+        background-color: rgb(67, 219, 77);
+    }
 }

@@ -1,0 +1,69 @@
+body{
+    margin:auto
+}
+a{
+    text-decoration:none;
+}
+header{
+    height:80px;
+    /*border:5px solid burlywood;*/
+    background-color: darkslategrey;
+}
+#brandname{
+    color:white;
+    font-size: 40px;
+    float:left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#social{
+    float:right;
+    margin-top: 1%;
+    margin-right: 1%
+}
+.socialImg{
+    height:50px;
+    border-radius: 25px;
+}
+/* Search Block CSS*/
+#container{
+    height: 700px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    /* border: 2px solid green; */
+}
+.filter{
+    height: 500px;
+    width: 20%;
+    border: 2px solid blue;
+    float: left;
+}
+.content{
+    height: 700px;
+    width: 70%;
+    margin-left: 4%;
+    border: 2px solid rgb(215, 78, 210);
+    float: left;
+}
+/* Footer Block CSS*/
+footer{
+    height:140px;
+    /* border:5px double rgb(133, 43, 72); */
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.fotdiv{
+    width: 31%;
+    float: left;
+    border-right: 2px solid white;
+}
+#noborder{
+    border: none;
+    width: 31%;
+    float: left;
+}
